@@ -2,8 +2,11 @@ name: BlockHunt
 version: ${project.version}
 main: me.linckode.blockhunt.BlockHunt
 prefix: BH
-authors: [LINCKODE]
-description: Hunt for blocks.
+description: Set a number of blocks/heads which the player can find to win a prize.
+author: LINCKODE
 commands:
   blockhunt:
-    description: Main command.
+    description: Main command. Allows for setting up the number of heads, their location , reseting the plugin and setting the prefix.
+    usage: /blockhunt [argument1] [argument2]
+    aliases:
+      - bh

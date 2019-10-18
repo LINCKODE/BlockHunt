@@ -1,9 +1,12 @@
 #Chat prefix
 prefix: "&9[&aBlock&bHunt&9] "
 
+#Whether if you want the plugin to be enabled or not
+enabled: true
+
 #Messages
 
-#blockFoundMessage placeholders - ? = currently found block / ! = total block count
+#blockFoundMessage placeholders - ? = number of blocks found by player / ! = total block count
 blockFoundMessage: "&3You have found block number &6? &3out of &5!&3 ."
 
 allBlocksFoundMessage: "&3You have found all the blocks!"
@@ -12,7 +15,7 @@ allBlocksAlreadyFoundMessage: "&3You already found all the blocks!"
 
 useOnJoinMessages: true
 
-#on join messages placeholders - ^ = player's name / * = total block count / ? = total of found blocks
+#on join messages placeholders - ^ = player's name / * = total block count / @ = number of blocks found by player
 onFirstJoinMessage: "&2 Hi &6^ &2! &9 Find &5*&9 blocks to win a prize!"
 onJoinMessage: "&2 Hi &6^ &2! &9 You have found @ / * blocks. &bFind them all for a prize!"
 
@@ -21,6 +24,7 @@ prizeCommand: "give ^ apple 1"
 
 #Command permission
 permission: "blockhunt.command"
+permissionMessage: "&4 You don't have permission to do this!"
 
 #Total block count
 blockCount: 0

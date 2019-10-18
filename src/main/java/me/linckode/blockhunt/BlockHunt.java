@@ -20,6 +20,7 @@ public final class BlockHunt extends JavaPlugin {
     static boolean canIndexBlocks = false;
     static ArrayList<Block> blocks = new ArrayList<>();
     static String prizeCommand;
+    public static boolean isEnabled;
 
     //event vars
     public static boolean canIndividuallySet = false;
@@ -31,6 +32,7 @@ public final class BlockHunt extends JavaPlugin {
     static String allBlocksFoundMessage;
     static String blockAlreadyFoundMessage;
     static String allBlocksAlreadyFoundMessage;
+    public static String permissionMessage;
 
     //On join player messages
     static boolean useOnJoinMessages;
@@ -68,12 +70,14 @@ public final class BlockHunt extends JavaPlugin {
             permission = Config.getString(configFile, "permission");
             blockCount = Config.getInt(configFile, "blockCount");
             prizeCommand = Config.getString(configFile, "prizeCommand");
+            isEnabled = Config.getBool(configFile, "enabled");
 
             //messages
             blockFoundMessage = Config.messageParser(Config.getString(configFile, "blockFoundMessage"));
             allBlocksFoundMessage = Config.messageParser(Config.getString(configFile, "allBlocksFoundMessage"));
             blockAlreadyFoundMessage = Config.messageParser(Config.getString(configFile, "blockAlreadyFoundMessage"));
             allBlocksAlreadyFoundMessage = Config.messageParser(Config.getString(configFile, "allBlocksAlreadyFoundMessage"));
+            permissionMessage = Config.messageParser(Config.getString(configFile, "permissionMessage"));
 
             //on join messages
             useOnJoinMessages = Config.getBool(configFile,"useOnJoinMessages");
