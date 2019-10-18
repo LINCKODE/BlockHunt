@@ -1,6 +1,5 @@
 package me.linckode.blockhunt;
 
-import me.linckode.blockhunt.Commands.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
@@ -15,7 +14,7 @@ import org.bukkit.inventory.EquipmentSlot;
 
 import java.io.File;
 
-public class Events implements Listener {
+ class Events implements Listener {
 
     @EventHandler
     void onPlayerJoin(PlayerJoinEvent event){

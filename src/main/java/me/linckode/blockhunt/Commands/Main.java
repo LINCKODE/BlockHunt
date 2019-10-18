@@ -28,20 +28,19 @@ public class Main implements CommandExecutor {
                 if (args[0].equalsIgnoreCase("reload")){
                     BlockHunt.loadConfigData();
                     player.sendMessage(BlockHunt.prefix + ChatColor.GREEN + "Successfully reloaded.");
-                    //TODO: Add block loading in loadConfigData()
                     return true;
                 }
 
             }
             if (args[0].equalsIgnoreCase("setPrefix")){
-                String prefix = "";
+                StringBuilder prefix = new StringBuilder();
                 for (int index = 1; index < args.length; index++)
                 {
-                    prefix = prefix + args[index] + " ";
+                    prefix.append(args[index]).append(" ");
                 }
                 if (BlockHunt.configFile.exists()){
-                    Config.set(BlockHunt.configFile, "prefix", prefix);
-                    player.sendMessage(BlockHunt.prefix + ChatColor.GREEN + "Prefix set to: " + Config.messageParser(prefix));
+                    Config.set(BlockHunt.configFile, "prefix", prefix.toString());
+                    player.sendMessage(BlockHunt.prefix + ChatColor.GREEN + "Prefix set to: " + Config.messageParser(prefix.toString()));
                     BlockHunt.loadConfigData();
                 }
                 else {

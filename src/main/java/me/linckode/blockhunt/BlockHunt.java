@@ -2,7 +2,6 @@ package me.linckode.blockhunt;
 
 import me.linckode.blockhunt.Commands.Main;
 import org.bukkit.Bukkit;
-import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,9 +17,9 @@ public final class BlockHunt extends JavaPlugin {
     public static String prefix;
     public static String permission;
     public static int blockCount;
-    public static boolean canIndexBlocks = false;
-    public static ArrayList<Block> blocks = new ArrayList<>();
-    public static String prizeCommand;
+    static boolean canIndexBlocks = false;
+    static ArrayList<Block> blocks = new ArrayList<>();
+    static String prizeCommand;
 
     //event vars
     public static boolean canIndividuallySet = false;
@@ -28,15 +27,15 @@ public final class BlockHunt extends JavaPlugin {
     public static int selectedBlock;
 
     //Player messages:
-    public static String blockFoundMessage;
-    public static String allBlocksFoundMessage;
-    public static String blockAlreadyFoundMessage;
-    public static String allBlocksAlreadyFoundMessage;
+    static String blockFoundMessage;
+    static String allBlocksFoundMessage;
+    static String blockAlreadyFoundMessage;
+    static String allBlocksAlreadyFoundMessage;
 
     //On join player messages
-    public static boolean useOnJoinMessages;
-    public static String onFirstJoinMessage;
-    public static String onJoinMessage;
+    static boolean useOnJoinMessages;
+    static String onFirstJoinMessage;
+    static String onJoinMessage;
 
 
 
