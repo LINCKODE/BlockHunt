@@ -1,0 +1,26 @@
+#Chat prefix
+prefix: "&9[&aBlock&bHunt&9] "
+
+#Messages
+
+#blockFoundMessage placeholders - ? = currently found block / ! = total block count
+blockFoundMessage: "&3You have found block number &6? &3out of &5!&3 ."
+
+allBlocksFoundMessage: "&3You have found all the blocks!"
+blockAlreadyFoundMessage: "&3You already found that block!"
+allBlocksAlreadyFoundMessage: "&3You already found all the blocks!"
+
+useOnJoinMessages: true
+
+#on join messages placeholders - ^ = player's name / * = total block count / ? = total of found blocks
+onFirstJoinMessage: "&2 Hi &6^ &2! &9 Find &5*&9 blocks to win a prize!"
+onJoinMessage: "&2 Hi &6^ &2! &9 You have found @ / * blocks. &bFind them all for a prize!"
+
+#prize command placeholder - ^ = player's name
+prizeCommand: "give ^ apple 1"
+
+#Command permission
+permission: "blockhunt.command"
+
+#Total block count
+blockCount: 0

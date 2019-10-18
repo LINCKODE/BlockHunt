@@ -1,0 +1,9 @@
+name: BlockHunt
+version: ${project.version}
+main: me.linckode.blockhunt.BlockHunt
+prefix: BH
+authors: [LINCKODE]
+description: Hunt for blocks.
+commands:
+  blockhunt:
+    description: Main command.
